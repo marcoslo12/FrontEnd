@@ -1,0 +1,32 @@
+body{
+    max-width: 1200px;
+    margin: auto;
+}
+header{    
+    height: 300px;
+    background-image: url("https://picsum.photos/1200/300");
+    position: relative;
+}
+header, div{
+    text-align: center;
+}
+h1{
+    position: absolute;
+    top: 50%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);  
+    margin: 0;
+    font-size: 2.5em;
+}
+
+
+nav ul{
+    list-style-type: none;
+    text-align: right;
+}
+nav li{
+    display: inline-block;
+}
+nav img{
+    text-align: left;
+}
