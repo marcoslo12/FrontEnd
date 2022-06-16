@@ -1,13 +1,13 @@
 body{
-    max-width: 1200px;
+    max-width: 1500px;
     margin: auto;
 }
 header{    
     height: 300px;
-    background-image: url("https://picsum.photos/1200/300");
+    background-image: url("https://picsum.photos/1500/300");
     position: relative;
 }
-header, div{
+header, h2{
     text-align: center;
 }
 h1{
@@ -16,17 +16,95 @@ h1{
     left: 50%;  
     transform: translate(-50%, -50%);  
     margin: 0;
-    font-size: 2.5em;
+    font-size: 3em;
 }
-
-
-nav ul{
-    list-style-type: none;
-    text-align: right;
-}
-nav li{
+nav li, footer li{
     display: inline-block;
 }
+nav ul{
+    display: flex;
+    margin: 0 -10px;
+    align-items: center;
+}
+nav li a{
+    color: white;
+    font-weight: bolder;
+    margin: 0 10px;
+    
+}
+nav {
+    background-color: grey;
+    padding: 30px;
+}
 nav img{
-    text-align: left;
+    margin-right: auto;
+    width: 200px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+footer{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+}
+footer li{
+    filter: invert(100%);
+    margin: 20px;
+    width: 45px;
+}
+
+
+.contacte{
+    max-width: 900px;
+    margin: auto;
+    padding: 10px;
+}
+input, textarea{
+    padding: 12px 20px;
+}
+input[type=text],input[type=email] , textarea{    
+    margin: 8px 0;
+    width: 100%;
+}
+input[type=submit]{
+    margin: 10px 0;
+    text-align: center;
+}
+h3{
+    margin: 0 20px;
+    
+}
+h3 img{
+    width: 30px;
+    margin: 0 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+#dades, #estudis{
+    background-color: gainsboro;
+    padding: 30px;
+}
+#laboral, #idiomes{
+    padding: 30px;
+}
+#dades img{
+    width: 200px;
+}
+#dades div{
+    margin: 0 10px;
+}
+table, th, td {
+    border: 1px solid;
+    text-align: center;
+    margin: 0 auto;
+}
+td{
+    padding: 20px;
 }
