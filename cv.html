@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,9 @@
     <link rel="stylesheet" href="CSS/style.css">
     <title>Curriculum</title>
 </head>
+
 <body>
-    <nav>       
+    <nav>
         <ul>
             <img src="assets/img/logo.png" alt="logo" />
             <li><a href="index.html">Inici</a></li>
@@ -21,16 +23,16 @@
     </header>
 
     <h2>Índex</h2>
-        <div class="container" id="index">
-            <h3><a href="#dades"><img src="assets/svg/contact.svg"/>Dades</a></h3> 
-            <h3><a href="#idiomes"><img src="assets/svg/lang.svg" />Idiomes</a></h3>
-            <h3><a href="#estudis"><img src="assets/svg/books.svg" />Estudis</a></h3>        
-            <h3><a href="#laboral"><img src="assets/svg/screen.svg" />Laboral</a></h3>       
-        </div>
+    <div class="container" id="index">
+        <h3><a href="#dades"><img src="assets/svg/contact.svg" />Dades</a></h3>
+        <h3><a href="#idiomes"><img src="assets/svg/lang.svg" />Idiomes</a></h3>
+        <h3><a href="#estudis"><img src="assets/svg/books.svg" />Estudis</a></h3>
+        <h3><a href="#laboral"><img src="assets/svg/screen.svg" />Laboral</a></h3>
+    </div>
 
     <div id="dades">
         <h2>Dades personals</h2>
-            <div class="container">
+        <div class="container">
             <div id="divdades">
                 <p><strong>Nom: </strong>Marcos López</p>
                 <p><strong>Adreça: </strong>C/Rubió i Ors</p>
@@ -39,61 +41,67 @@
                 <p><strong>Correu electrònic: </strong>marcos.lo.al@hotmail.estudis</p>
             </div>
             <div>
-                <img src="assets/svg/smile.svg"/>
+                <img src="assets/svg/smile.svg" />
             </div>
         </div>
     </div>
     <div id="idiomes">
         <h2>Idiomes</h2>
-        <table>
-            <thead>
-                <tr>
-                    <td><Strong>Idioma</Strong></td>
-                    <td><Strong>Nivell baix</Strong></td>
-                    <td><Strong>Nivell mig</Strong></td>
-                    <td><Strong>Nivell alt</Strong></td>
-                    <td><Strong>Natiu</Strong></td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Català</td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td>X</td>
-                </tr>
-                <tr>
-                    <td>Castellà</td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td>X</td>
-                </tr>
-                <tr>
-                    <td>Anglès</td>
-                    <td> </td>
-                    <td>X</td>
-                    <td> </td>
-                    <td> </td>
-                </tr>
-            </tbody>
-        </table>
+        como habrás visto, esta tabla en formato movil te esta petando el diseño
+        un truco para que la tabla se vea mejor en dispositivos pequeños sin perder su tamaño
+        es envolverlo en un capa (div) que tenga overflo-x: scroll, asi solo la tabla tendra scroll a la derecha.
+        asegurate que la tabla tiene un width, sino no funcionará.
+        <div class="idiomes__taula-box">
+            <table>
+                <thead>
+                    <tr>
+                        <td><Strong>Idioma</Strong></td>
+                        <td><Strong>Nivell baix</Strong></td>
+                        <td><Strong>Nivell mig</Strong></td>
+                        <td><Strong>Nivell alt</Strong></td>
+                        <td><Strong>Natiu</Strong></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Català</td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>Castellà</td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>Anglès</td>
+                        <td> </td>
+                        <td>X</td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-    <div id="estudis">    
+    <div id="estudis">
         <h2>Informació acadèmica</h2>
         <ul>
             <li>
                 <p><strong>Màster en Aplicacions Multimedia</strong></p>
-                <p>Universitat Oberta de Catalunya. <i>Setembre 2018 - Juny 2020</i></p> 
+                <p>Universitat Oberta de Catalunya. <i>Setembre 2018 - Juny 2020</i></p>
             </li>
             <li>
                 <p><strong>Grau en Enginyeria Electrònica industrial i automàtica</strong></p>
-                <p>Universitat Politècnica de Catalunya. <i>Setembre 2013 - Juny 2017</i></p> 
+                <p>Universitat Politècnica de Catalunya. <i>Setembre 2013 - Juny 2017</i></p>
             </li>
             <li>
                 <p><strong>Batxillerat tecnològic</strong></p>
-                <p>La Salle Congrés. <i>Setembre 2011 - Juny 2013</i></p> 
+                <p>La Salle Congrés. <i>Setembre 2011 - Juny 2013</i></p>
             </li>
         </ul>
     </div>
@@ -102,18 +110,18 @@
         <ul>
             <li>
                 <p><strong>Programador FullStack a CSUC</strong> (<i>Barcelona, 2021 - Actualment</i>)</p>
-                <p>Programador tant en la part frontend com en la part backend. Responsable de 3 projectes.</p>                   
+                <p>Programador tant en la part frontend com en la part backend. Responsable de 3 projectes.</p>
             </li>
             <li>
                 <p><strong>Programador java a Capgemini</strong> (<i>Barcelona, 2019 - 2021</i>)</p>
-                <p>Programador backend en java per al sector bancari.</p>                   
+                <p>Programador backend en java per al sector bancari.</p>
             </li>
             <li>
                 <p><strong>Eninginyer electrònic a CNM</strong> (<i>Cerdanyola del VAllés, 2017 - 2019</i>)</p>
-                <p>Responsable de la part de hardware i software d'un projecte europeu</p>                   
+                <p>Responsable de la part de hardware i software d'un projecte europeu</p>
             </li>
-        </ul> 
-    </div>  
+        </ul>
+    </div>
     <footer>
         <ul>
             <li><a href=""><img src="assets/svg/logo-twitter.svg" /></a></li>
@@ -122,4 +130,5 @@
         </ul>
     </footer>
 </body>
+
 </html>

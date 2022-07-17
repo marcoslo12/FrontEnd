@@ -1,266 +1,281 @@
 body {
-  max-width: 1500px;
-  margin: auto;
+	max-width: 1500px;
+	margin: auto;
 }
 header {
-  height: 300px;
-  background-image: url("https://picsum.photos/1500/300");
-  position: relative;
+	height: 300px;
+	background-image: url('https://picsum.photos/1500/300');
+	position: relative;
 }
+/* un espacio entre regla y regla */
 header,
 h2 {
-  text-align: center;
+	text-align: center;
 }
 h2 {
-  font-size: 2em;
-  margin: 50px;
+	font-size: 2em;
+	margin: 50px;
 }
 h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  font-size: 3em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	font-size: 3em;
 }
 nav li,
 footer li {
-  display: inline-block;
+	display: inline-block;
 }
 nav ul {
-  display: flex;
-  margin: 0 -10px;
-  align-items: center;
+	display: flex;
+	margin: 0 -10px;
+	align-items: center;
 }
 nav li a {
-  color: white;
-  font-weight: bolder;
-  margin: 0 10px;
+	color: white;
+	font-weight: bolder;
+	margin: 0 10px;
 }
 nav {
-  background-color: #222222;
-  padding: 30px;
+	background-color: #222222;
+	padding: 30px;
 }
 nav img {
-  margin-right: auto;
-  width: 200px;
+	margin-right: auto;
+	width: 200px;
 }
 
 a {
-  text-decoration: none;
-  color: black;
+	text-decoration: none;
+	color: black;
 }
 footer {
-  background-color: #222222;
-  display: flex;
-  justify-content: center;
+	background-color: #222222;
+	display: flex;
+	justify-content: center;
 }
 footer li {
-  filter: invert(100%);
-  margin: 20px;
-  width: 45px;
+	filter: invert(100%);
+	margin: 20px;
+	width: 45px;
 }
 
 form {
-  max-width: 1000px;
-  margin: auto;
-  padding: 10px;
+	max-width: 1000px;
+	margin: auto;
+	padding: 10px;
 }
 input,
 textarea {
-  padding: 12px 20px;
+	padding: 12px 20px;
 }
-input[type="text"],
-input[type="email"],
+input[type='text'],
+input[type='email'],
 textarea {
-  margin: 8px 0;
-  width: 100%;
+	margin: 8px 0;
+	width: 100%;
 }
-input[type="submit"] {
-  margin: 10px 0;
-  text-align: center;
+input[type='submit'] {
+	margin: 10px 0;
+	text-align: center;
 }
 h3 {
-  margin: 0 20px;
+	margin: 0 20px;
 }
 h3 img {
-  width: 30px;
-  margin: 0 10px;
+	width: 30px;
+	margin: 0 10px;
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  margin: 100px;
+	display: flex;
+	justify-content: center;
+	margin: 100px;
 }
+
+/* Hay que tener cuidado con usar muchas reglas especificas, porque te cargas la cascada del css, normalmente 
+la especifidad se deja solo para elementos o pseudo-elementos como por ejemplo :after, :before, ::placeholder, etc. */
+
 #dades,
 #estudis {
-  background-color: gainsboro;
-  padding: 30px;
+	background-color: gainsboro;
+	padding: 30px;
 }
 #laboral,
 #idiomes {
-  padding: 30px;
+	padding: 30px;
 }
 #dades img {
-  width: 200px;
+	width: 200px;
 }
 #dades div {
-  margin: 0 10px;
+	margin: 0 10px;
 }
 table,
 th,
 td {
-  border: 1px solid;
-  text-align: center;
-  margin: 0 auto;
+	border: 1px solid;
+	text-align: center;
+	margin: 0 auto;
 }
 td {
-  padding: 20px;
+	padding: 20px;
 }
 
 #textprincipal {
-  max-width: 1000px;
-  margin: auto;
-  align-items: flex-start;
+	max-width: 1000px;
+	margin: auto;
+	align-items: flex-start;
 }
 #textprincipal p {
-  text-align: justify;
-  padding: 0 20px 0 20px;
-  margin: 0;
+	text-align: justify;
+	padding: 0 20px 0 20px;
+	margin: 0;
 }
 
 #textprincipal img {
-  width: 400px;
+	width: 400px;
 }
 .itemproject {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px 0px 24px;
-  gap: 24px;
-  height: 451.97px;
-  border: 1px solid #000000;
-  border-radius: 20px;
-  margin: 30px;
-  width: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px 0px 24px;
+	gap: 24px;
+	height: 451.97px;
+	border: 1px solid #000000;
+	border-radius: 20px;
+	margin: 30px;
+	width: 300px;
 }
 .itemproject img {
-  width: 300px;
-  height: 180px;
-  border-radius: 20px 20px 0 0;
+	width: 300px;
+	height: 180px;
+	border-radius: 20px 20px 0 0;
 }
 .itemproject button {
-  width: 240px;
-  height: 64px;
-  background: #222222;
-  border-radius: 6px;
-  color: white;
-  transition-duration: 0.4s;
+	width: 240px;
+	height: 64px;
+	background: #222222;
+	border-radius: 6px;
+	color: white;
+	transition-duration: 0.4s;
 }
 .itemproject p {
-  padding: 15px;
-  text-align: justify;
+	padding: 15px;
+	text-align: justify;
 }
 .itemproject button:hover {
-  background-color: white; /* Green */
-  color: #222222;
+	background-color: white; /* Green */
+	color: #222222;
 }
 
 .itemaficions {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px;
-  margin: 15px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px;
+	margin: 15px;
 
-  width: 342px;
-  height: 96px;
+	width: 342px;
+	height: 96px;
 
-  background: #d9d9d9;
-  border-radius: 6px;
+	background: #d9d9d9;
+	border-radius: 6px;
 }
 .containeraficions {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 80px 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 80px 0;
 }
 .itemaficions p {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  display: flex;
-  align-items: center;
-  text-align: center;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	display: flex;
+	align-items: center;
+	text-align: center;
 }
 .itemaficions img {
-  width: 45px;
+	width: 45px;
 }
 .experiencia {
-  background-color: black;
-  color: white;
-  padding: 40px 0;
+	background-color: black;
+	color: white;
+	padding: 40px 0;
 }
 
 .experiencia img {
-  width: 250px;
-  height: 250px;
-  margin: 10px 50px;
+	width: 250px;
+	height: 250px;
+	margin: 10px 50px;
+}
+
+/* estilos del truco de la tabla */
+.idiomes__taula-box {
+	overflow-x: scroll;
+	margin-top: 16px;
+}
+
+.idiomes__taula-box table {
+	width: 100%;
 }
 
 @media only screen and (max-width: 992px) {
-  h2 {
-    color: green;
-  }
-  .container {
-    flex-wrap: wrap;
-  }
-  .item {
-    margin: 50px 50px;
-  }
-  #index {
-    margin: 50px 105px;
-  }
-  #index h3 {
-    margin: 30px 70px;
-  }
-  #textprincipal img {
-    margin: 30px;
-  }
+	h2 {
+		color: green;
+	}
+	.container {
+		flex-wrap: wrap;
+	}
+	.item {
+		margin: 50px 50px;
+	}
+	#index {
+		margin: 50px 105px;
+	}
+	#index h3 {
+		margin: 30px 70px;
+	}
+	#textprincipal img {
+		margin: 30px;
+	}
 }
 
 @media only screen and (max-width: 768px) {
-  h2 {
-    color: blue;
-  }
-  .container {
-    margin: 50px 50px;
-  }
-  .itemaficions {
-    margin: 20px;
-  }
-  #index {
-    margin: 30px 155px;
-  }
-  #divdades {
-    text-align: center;
-  }
-  #dades div {
-    margin: 20px 10px;
-  }
+	h2 {
+		color: blue;
+	}
+	.container {
+		margin: 50px 50px;
+	}
+	.itemaficions {
+		margin: 20px;
+	}
+	#index {
+		margin: 30px 155px;
+	}
+	#divdades {
+		text-align: center;
+	}
+	#dades div {
+		margin: 20px 10px;
+	}
 }
 @media only screen and (max-width: 600px) {
-  h2 {
-    color: red;
-  }
-  nav img {
-    display: none;
-  }
-  nav ul {
-    justify-content: center;
-  }
-  #textprincipal p {
-    margin: 30px;
-  }
+	h2 {
+		color: red;
+	}
+	nav img {
+		display: none;
+	}
+	nav ul {
+		justify-content: center;
+	}
+	#textprincipal p {
+		margin: 30px;
+	}
 }
